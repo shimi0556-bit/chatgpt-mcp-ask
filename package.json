@@ -9,11 +9,15 @@
     "start": "node dist/index.js",
     "dev": "tsx watch src/index.ts"
   },
-  "keywords": ["mcp", "chatgpt", "streamable-http"],
-  "author": "שימי וולברשטין",
+  "keywords": [
+    "mcp",
+    "chatgpt",
+    "streamable-http"
+  ],
+  "author": "\u05e9\u05d9\u05de\u05d9 \u05d5\u05d5\u05dc\u05d1\u05e8\u05e9\u05d8\u05d9\u05df",
   "license": "MIT",
   "engines": {
-    "node": ">=18"
+    "node": "20.x"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.30.0",
