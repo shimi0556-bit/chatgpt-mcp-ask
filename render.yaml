@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: shimi-ask
+    runtime: node
+    plan: free
+    region: frankfurt
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: "0.0.0.0"
+      - key: ALLOWED_HOSTS
+        value: "*"
